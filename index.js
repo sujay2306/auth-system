@@ -1,5 +1,6 @@
 const app = require("./app")
+const {PORT} = process.env
 
-app.listen(4000,()=>{
-    console.log("app is running at 40000");
+app.listen(PORT,()=>{
+    console.log(`app is running at ${PORT}`);
 });
