@@ -1,4 +1,5 @@
 const app = require("./app")
+//port variable comes from process.env
 const {PORT} = process.env
 
 app.listen(PORT,()=>{

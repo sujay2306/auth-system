@@ -1,13 +1,14 @@
 const mongoose = require("mongoose")
 //all object inside schema are object
 
-const UserSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
 
     firstname:{
         type: String,
         default: null,
         required: true
     },
+
     email: {
         type: String,
         unique: true,
@@ -26,4 +27,4 @@ const UserSchema = new mongoose.Schema({
 });
 
 //we are sending this as a model
-module.exports = mongoose.model("user", UserSchema)
+module.exports = mongoose.model("user", userSchema) //we can call this model as user and it is follwoing userSchema 
