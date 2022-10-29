@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 //all object inside schema are object
+
 const UserSchema = new mongoose.Schema({
 
     firstname:{
@@ -10,7 +11,7 @@ const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         unique: true,
-        required: [true, "this is required"]
+        required: true
     },
 
     password:{
@@ -22,4 +23,7 @@ const UserSchema = new mongoose.Schema({
     }
   
 
-})
+});
+
+//we are sending this as a model
+module.exports = mongoose.model("user", UserSchema)
