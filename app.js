@@ -100,4 +100,7 @@ app.post("/login", async (req, res) => {
     }
 })
 
+app.post("/dashboard", (req, res) =>{
+    res.send("Welcome to my Backend")
+})
 module.exports = app;
