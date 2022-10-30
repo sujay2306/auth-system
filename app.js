@@ -13,6 +13,7 @@ app.use(express.json());
 //3.take care of already reg users
 //3.take care of password
 //4. generate tokens or send success ms
+
 app.get("/",(req, res) => {
     res.send( "<h1>Hello from Auth System </h1>" );
 });
